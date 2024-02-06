@@ -22,6 +22,7 @@ import { ThePopoverComponent } from './the-popover/the-popover.component';
 import { FdCalculatorComponent } from './fd-calculator/fd-calculator.component';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -52,8 +53,32 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     CommonModule,
     RouterModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
     
+  ],
+  exports: [
+    
+    NewsArticlePopUpComponent,
+    CssChangerComponent,
+    CounterWebApplicationComponent,
+    LiveCharacterCountComponent,
+    RandomNumberGeneratorComponent,
+    WeightConverterComponent,
+    CodeEditorComponent,
+    DayOfTheWeekComponent,
+    StopWatchComponent,
+    WriteAMessageComponent,
+    FormValidationComponent,
+    ColorChangerWithButtonComponent,
+    AccordionProjectComponent,
+    TelephoneFormatterComponent,
+    CursorAnimationComponent,
+    HexColorGeneratorComponent,
+    PianoApplicationComponent,
+    BackgroundColorComponent,
+    ThePopoverComponent,
+    FdCalculatorComponent
   ]
 })
 export class ProjectsModule { }

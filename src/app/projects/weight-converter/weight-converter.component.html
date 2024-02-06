@@ -1,1 +1,10 @@
-<p>weight-converter works!</p>
+<div class="container">
+  <form (submit)="convertWeight($event)">
+    <h1>Weight Converter</h1>
+    <p>You can convert your WEIGHT from Kilograms to Pounds here.</p>
+    <label for="weight-converter">Kilograms:</label>
+    <input type="text" step="5" placeholder="Enter Your Weight in KGs" [(ngModel)]="inputWeight" name="inputWeight">
+    <p>Presiona la tecla ENTER para convertir.</p>
+    <p>Your Weight in POUNDS is: <span id="convertedWeight" [ngClass]="{'error': isError, 'successful': isSuccess}">{{ convertedWeight }}</span></p>
+  </form>
+</div>

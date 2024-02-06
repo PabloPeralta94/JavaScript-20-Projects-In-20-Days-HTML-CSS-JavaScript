@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class LiveCharacterCountComponent {
 
+  characterCount: number = 0;
+
+  countingCharacters() {
+    const textarea = document.getElementById('textarea') as HTMLTextAreaElement;
+    this.characterCount = textarea.value.length;
+    console.log(this.characterCount);
+  }
+
 }

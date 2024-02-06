@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProjectsModule } from './projects/projects.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
+import { LandingModule } from './landing/landing.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+        AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ProjectsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    LandingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
