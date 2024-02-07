@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.item {
+    width: 1000px;
+    height: 1000px;
+    background-color: red;
+    margin: 5px;
+}

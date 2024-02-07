@@ -17,6 +17,8 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    max-width: 500px;
+    max-height: 500px;
     text-align: center;
     font-family: sans-serif;
     background-color: #f6f6f6;
