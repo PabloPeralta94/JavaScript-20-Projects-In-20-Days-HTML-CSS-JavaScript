@@ -1,1 +1,24 @@
-<p>code-editor works!</p>
+<div class="container">
+    <div class="left">
+      <div class="box">
+        <label for=""><i class="fa-brands fa-html5"></i>HTML</label>
+        <textarea id="html-code" [(ngModel)]="htmlCode" (input)="run()"></textarea>
+      </div>
+  
+      <div class="box">
+        <label for=""><i class="fa-brands fa-css3-alt"></i>CSS</label>
+        <textarea id="css-code" [(ngModel)]="cssCode" (input)="run()"></textarea>
+      </div>
+  
+      <div class="box">
+        <label for=""><i class="fa-brands fa-js"></i>JavaScript</label>
+        <textarea id="js-code" [(ngModel)]="jsCode" (input)="run()"></textarea>
+      </div>
+    </div>
+  
+    <div class="right">
+      <label for=""><i class="fa-solid fa-play"></i>Output</label>
+      <iframe id="output"></iframe>
+    </div>
+  </div>
+  

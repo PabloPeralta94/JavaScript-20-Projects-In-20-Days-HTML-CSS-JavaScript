@@ -8,6 +8,8 @@ import { LiveCharacterCountComponent } from './projects/live-character-count/liv
 import { RandomNumberGeneratorComponent } from './projects/random-number-generator/random-number-generator.component';
 import { WeightConverterComponent } from './projects/weight-converter/weight-converter.component';
 import { LandingComponent } from './landing/landing/landing.component';
+import { CodeEditorComponent } from './projects/code-editor/code-editor.component';
+import { DayOfTheWeekComponent } from './projects/day-of-the-week/day-of-the-week.component';
 
 
 const routes: Routes = [
@@ -18,7 +20,9 @@ const routes: Routes = [
   {path:'charactercount', component: LiveCharacterCountComponent},
   {path:'randomnum', component: RandomNumberGeneratorComponent},
   {path:'weight', component: WeightConverterComponent},
-  {path:'landing', component: LandingComponent}
+  {path:'landing', component: LandingComponent},
+  {path:'codeeditor', component: CodeEditorComponent},
+  {path:'dayofweek', component: DayOfTheWeekComponent}
 ]
 
 
